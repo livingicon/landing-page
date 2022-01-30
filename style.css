@@ -1,5 +1,4 @@
-/*FIRST PASS ITEM PLACEMENT AND INITIAL STYLING*/
-
+/*GENERAL*/
 body {
     margin: 0;
     font-family: sans-serif;
@@ -14,16 +13,67 @@ body {
     flex: 1; /* fixes header and footer in place */
 }
 
+/*HERO SECTION*/
 .hero,
 .footer {
     background-color: #1F2937
 }
 
+.header {
+    display: flex;
+    justify-content: space-between; /* spreads links and logo to edges */
+    margin: 0px 175px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* centering logo */
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
 .about {
     display: flex;
     justify-content: space-between;
+    margin: 100px 175px;
+    gap: 40px;
 }
 
+.about-img {
+    background-color: #626972;
+    color: #f9faf8;
+    width: 300px;
+    padding: 100px; /*this needs to change...max height?*/
+}
+
+.about-info h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    margin: 0px;
+}
+
+.about p {
+    margin: 0px;
+}
+
+.links {
+    display: flex;
+    gap: 20px; /* gap between links */
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*INFORMATION SECTION*/
 .title {
     font-size: 36px;
     color: #1f2937;
@@ -51,10 +101,7 @@ body {
     max-width: 130px;
   } 
 
-.about-img {
-    background-color: darkgrey;
-}
-
+/*QUOTE SECTION*/
 .quote-container {
     background-color: #E5E7EB;
     display: flex;
@@ -75,10 +122,11 @@ blockquote {
     font-weight: lighter;
 }
 
-small {
+.quote p {
     text-align: right; /* this isn't working because of the small */
 }
 
+/*ACTION SECTION*/
 .action-container {
      /*need to change this*/
     display: flex;
@@ -96,26 +144,14 @@ small {
     flex-direction: column;
 }
 
-.header {
+/*FOOTER SECTION*/
+.footer {
     display: flex;
-    justify-content: space-between; /* spreads links and logo to edges */
+    justify-content: center;
+    align-items: center;
 }
 
-.links {
-    display: flex;
-    gap: 20px; /* gap between links */
-
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    list-style: none;
-}
-
+/*background-color general*/
 a,
 .footer,
 .about-info p {
@@ -123,16 +159,22 @@ a,
     font-size: 18px;
 }
 
-.logo {
-    display: flex;
-    align-items: center; /* centring logo */
-    font-size: 24px;
-    color: #F9FAF8;
-    margin-left: 15px;
+/*buttons-general*/
+button {
+    background-color: #3882f6;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #f9faf8;
+    padding: 8px 35px;
+    border-radius: 10px;
+    border-style: none;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-info button {
+    margin-top: 10px;
+}
+
+.action-info button {
+    border-style: solid;
+    border-color: #f9faf8;
 }
