@@ -1,0 +1,138 @@
+/*FIRST PASS ITEM PLACEMENT AND INITIAL STYLING*/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    display: flex; /*makes it possible for the 3 flex-items to flex: 1 to stretch*/
+    flex-direction: column;
+    flex: 1; /* fixes header and footer in place */
+}
+
+.hero,
+.footer {
+    background-color: #1F2937
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bolder;
+}
+
+.information {
+    text-align: center;
+    flex: 1;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+}
+
+.box {
+    border: 4px solid #3882f6;
+    height: 100px;
+}
+
+.text { /*can I add this to .box for width?*/
+    max-width: 130px;
+  } 
+
+.about-img {
+    background-color: darkgrey;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.quote {
+    width: 850px;
+}
+
+blockquote {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+small {
+    text-align: right; /* this isn't working because of the small */
+}
+
+.action-container {
+     /*need to change this*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.action-info {
+    background-color: #3882f6;
+    display: flex;
+}
+
+.action-words {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* spreads links and logo to edges */
+}
+
+.links {
+    display: flex;
+    gap: 20px; /* gap between links */
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+a,
+.footer,
+.about-info p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* centring logo */
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-left: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
