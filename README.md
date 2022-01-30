@@ -1,1 +1,1 @@
-# landing-page
+This is the second required project for "The Odin Project" that is the culmination of their entry html and css lessons. This lesson is meant to use flexbox and basic css styling to mimic a suggested website style. In this project, I hope to not only be successful in creating the page, but I also want to go back and edit the css for best-practices. 
