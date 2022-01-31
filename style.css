@@ -8,9 +8,9 @@ body {
 }
 
 .body {
-    display: flex; /*makes it possible for the 3 flex-items to flex: 1 to stretch*/
+    display: flex;
     flex-direction: column;
-    flex: 1; /* fixes header and footer in place */
+    flex: 1;
 }
 
 /*HERO SECTION*/
@@ -21,13 +21,13 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between; /* spreads links and logo to edges */
+    justify-content: space-between;
     margin: 0px 175px;
 }
 
 .logo {
     display: flex;
-    align-items: center; /* centering logo */
+    align-items: center;
     font-size: 24px;
     color: #F9FAF8;
     font-weight: bolder;
@@ -89,16 +89,22 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 52px;
+    gap: 50px;
+}
+
+.info {
+    width: 150px;
 }
 
 .box {
     border: 4px solid #3882f6;
-    height: 100px;
+    height: 142px;
+    border-radius: 10px;
 }
 
-.text { /*can I add this to .box for width?*/
-    max-width: 130px;
+.text {
+    padding-top: 10px;
+    padding-bottom: 85px;
   } 
 
 /*QUOTE SECTION*/
@@ -112,7 +118,7 @@ a {
 }
 
 .quote {
-    width: 850px;
+    padding: 100px 175px;
 }
 
 blockquote {
@@ -120,15 +126,18 @@ blockquote {
     color: #1f2937;
     font-style: italic;
     font-weight: lighter;
+    margin: 0px;
 }
 
 .quote p {
-    text-align: right; /* this isn't working because of the small */
+    text-align: right;
+    font-weight: bolder;
+    font-size: 24px;
+    margin: 0px;
 }
 
 /*ACTION SECTION*/
 .action-container {
-     /*need to change this*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,11 +146,34 @@ blockquote {
 .action-info {
     background-color: #3882f6;
     display: flex;
+    border-radius: 10px;
+    margin: 100px 175px;
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
 }
 
 .action-words {
     display: flex;
     flex-direction: column;
+    margin: 50px 100px;
+}
+
+.action-words h1 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #f9faf8;
+    margin: 0px;
+}
+
+.action-words p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0px
 }
 
 /*FOOTER SECTION*/
@@ -159,7 +191,7 @@ a,
     font-size: 18px;
 }
 
-/*buttons-general*/
+/*buttons general*/
 button {
     background-color: #3882f6;
     font-size: 18px;
@@ -174,7 +206,7 @@ button {
     margin-top: 10px;
 }
 
-.action-info button {
+.action-button button { 
     border-style: solid;
     border-color: #f9faf8;
 }
