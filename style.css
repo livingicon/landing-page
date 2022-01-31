@@ -1,31 +1,31 @@
 /*GENERAL*/
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.body {
+.content-container {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
 /*HERO SECTION*/
-.hero,
-.footer {
+.hero-container,
+.footer-container {
     background-color: #1F2937
 }
 
-.header {
+.header-container {
     display: flex;
     justify-content: space-between;
     margin: 0px 175px;
 }
 
-.logo {
+#logo {
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -33,7 +33,7 @@ body {
     font-weight: bolder;
 }
 
-.about {
+.about-container {
     display: flex;
     justify-content: space-between;
     margin: 100px 175px;
@@ -41,10 +41,11 @@ body {
 }
 
 .about-img {
-    background-color: #626972;
+    background-color: hsl(214deg 7% 46%);
     color: #f9faf8;
-    width: 300px;
-    padding: 100px; /*this needs to change...max height?*/
+    max-width: 350px;
+    margin: auto;
+    padding: 100px;
 }
 
 .about-info h1 {
@@ -54,13 +55,13 @@ body {
     margin: 0px;
 }
 
-.about p {
+.about-container p {
     margin: 0px;
 }
 
 .links {
     display: flex;
-    gap: 20px; /* gap between links */
+    gap: 20px;
 
 }
 
@@ -74,18 +75,19 @@ a {
 }
 
 /*INFORMATION SECTION*/
-.title {
+#title {
     font-size: 36px;
     color: #1f2937;
     font-weight: bolder;
 }
 
-.information {
+.information-container {
     text-align: center;
     flex: 1;
+    margin: 0px 175px;
 }
 
-.info-container {
+.box-text-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,14 +120,15 @@ a {
 }
 
 .quote {
-    padding: 100px 175px;
+    padding: 100px 0px;
+    margin: 0px 375px;
 }
 
 blockquote {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 100;
     margin: 0px;
 }
 
@@ -142,42 +145,42 @@ blockquote {
     justify-content: center;
     align-items: center;
     flex: 1;
+    margin: 100px 175px;
 }
 .action-info {
     background-color: #3882f6;
     display: flex;
     border-radius: 10px;
-    margin: 100px 175px;
 }
 
-.action-button {
+#action-button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 350px;
 }
 
-.action-words {
+.action-text {
     display: flex;
     flex-direction: column;
     margin: 50px 100px;
 }
 
-.action-words h1 {
+.action-text h1 {
     font-size: 24px;
     font-weight: bolder;
     color: #f9faf8;
     margin: 0px;
 }
 
-.action-words p {
+.action-text p {
     font-size: 18px;
     color: #e5e7eb;
     margin: 0px
 }
 
 /*FOOTER SECTION*/
-.footer {
+.footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +188,7 @@ blockquote {
 
 /*background-color general*/
 a,
-.footer,
+.footer-container,
 .about-info p {
     color: #e5e7eb;
     font-size: 18px;
@@ -206,7 +209,7 @@ button {
     margin-top: 10px;
 }
 
-.action-button button { 
+#action-button button { 
     border-style: solid;
     border-color: #f9faf8;
 }
